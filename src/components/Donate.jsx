@@ -51,7 +51,7 @@ export default function Donate({
     setApiError('')
     try {
       const result = await donationsApi.create({
-        project_id: project?.id || 'proj_flood',
+        project_id: project?.id,  // ← 只改這一行：移除 fallback 'proj_flood'
         amount,
         method: tab === 'fiat' ? fiatMethod : cryptoMethod,
         method_tab: tab,
