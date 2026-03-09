@@ -1,5 +1,5 @@
 // src/api/client.js  – Frontend API client for GoodChain backend
-const BASE = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const BASE = import.meta.env.VITE_API_URL || 'https://shanchainbackend.onrender.com';
 
 function getToken() {
   return localStorage.getItem('gc_token');
